@@ -1,0 +1,21 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<polymer-element name="wiznia-show" attributes="action">
+  <template>
+  <style>
+    img {max-width: 250px; max-height: 400px;}
+  </style>
+      <img src="/scripts/photos/{{action}}.jpg"/>
+        <h1><strong>{{action}}</strong></h1>
+    </div>
+  </template>
+  <script>
+    Polymer('wiznia-show', {
+      action: 'saxo',
+      //posible values: alegre, cantando, drinking, fichines, pelando-facha , procer, saxo, timesquare
+
+      ready:function(){
+        console.log("wiznia-show is ready doing", this.action);
+      }
+    });
+  </script>
+</polymer-element>

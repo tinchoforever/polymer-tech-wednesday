@@ -1,0 +1,19 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<polymer-element name="hello-you">
+  <template>
+    <h2>{{hello}} {{your_name}}</h2>
+    <p>
+      <input value="{{your_name}}">
+      <input type=submit value="{{done}}!" on-click="{{feelingLucky}}">
+    </p>
+    <!-- ... -->
+  </template>
+  <script>
+    Polymer('hello-you', {
+      your_name: '',
+      feelingLucky: function() {
+         alert(this.your_name);
+      }
+    });
+  </script>
+</polymer-element>

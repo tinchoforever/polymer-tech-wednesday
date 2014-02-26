@@ -1,0 +1,16 @@
+{
+  "name": "polymer",
+  "version": "0.1.1.2",
+  "authors": [
+    "Martin Rabaglia <tinchoforever@gmail.com>"
+  ],
+  "description": "Polymer Golazo",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
